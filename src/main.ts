@@ -2,7 +2,7 @@ import { Notice, Plugin, TFile } from 'obsidian';
 import { extractFirstH1, titleToFilename } from './utils';
 
 export default class TitleSyncPlugin extends Plugin {
-	async onload() {
+	onload() {
 		this.addCommand({
 			id: 'sync-title-to-filename',
 			name: 'Sync title to filename',
@@ -10,12 +10,12 @@ export default class TitleSyncPlugin extends Plugin {
 				const file = this.app.workspace.getActiveFile();
 				if (file && file.extension === 'md') {
 					if (!checking) {
-						this.syncTitleToFilename(file);
+						void this.syncTitleToFilename(file);
 					}
 					return true;
 				}
 				return false;
-			}
+			},
 		});
 	}
 
@@ -56,7 +56,6 @@ export default class TitleSyncPlugin extends Plugin {
 
 			await this.app.fileManager.renameFile(file, newPath);
 			new Notice(`Renamed to "${newFilename}.md"`);
-
 		} catch (error) {
 			console.error('Title Sync: Error syncing title to filename', error);
 			new Notice('Error syncing title to filename');

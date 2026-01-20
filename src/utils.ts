@@ -5,7 +5,6 @@
 export function extractFirstH1(content: string): string | null {
 	const lines = content.split('\n');
 	let inFrontmatter = false;
-	let frontmatterEnded = false;
 	let inCodeBlock = false;
 
 	for (let i = 0; i < lines.length; i++) {
@@ -21,7 +20,6 @@ export function extractFirstH1(content: string): string | null {
 		if (inFrontmatter) {
 			if (trimmedLine === '---' || trimmedLine === '...') {
 				inFrontmatter = false;
-				frontmatterEnded = true;
 			}
 			continue;
 		}
@@ -89,10 +87,9 @@ export function titleToFilename(title: string): string {
 	result = result.replace(/[*"\\/<>:|?#^[\]]/g, '-');
 
 	// 3. Collapse multiple dashes and spaces
-	result = result.replace(/[-\s]+/g, ' ');
-	result = result.replace(/\s*-\s*/g, '-');
-	result = result.replace(/-+/g, '-');
-	result = result.replace(/\s+/g, ' ');
+	result = result.replace(/-+/g, '-'); // Multiple dashes → single dash
+	result = result.replace(/\s-\s/g, ' '); // Space-dash-space → single space
+	result = result.replace(/\s+/g, ' '); // Multiple spaces → single space
 
 	// 4. Trim leading/trailing dashes and spaces
 	result = result.replace(/^[-\s]+|[-\s]+$/g, '');
