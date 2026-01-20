@@ -44,7 +44,7 @@ The file will be renamed to match the H1 header.
 2. Go to Hotkeys
 3. Search for "Title Sync: Sync title to filename"
 4. Click the plus icon and set your preferred shortcut
-   - Suggested: `Cmd+Shift+T` (Mac) or `Ctrl+Shift+T` (Windows/Linux)
+   - Suggested: `Cmd+Option+T` (Mac) or `Ctrl+Alt+T` (Windows/Linux)
 
 ## Examples
 
