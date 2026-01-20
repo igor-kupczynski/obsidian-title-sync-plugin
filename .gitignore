@@ -1,0 +1,23 @@
+# Node
+node_modules/
+
+# Build output
+main.js
+*.js.map
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian
+data.json
+
+# npm
+npm-debug.log*
+
+# Coverage
+coverage/
