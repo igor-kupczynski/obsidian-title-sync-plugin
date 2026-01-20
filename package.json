@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-title-sync-plugin",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Obsidian plugin to sync the first H1 header with the filename",
 	"main": "main.js",
 	"scripts": {

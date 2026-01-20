@@ -56,6 +56,28 @@ The file will be renamed to match the H1 header.
 | `# Is This Valid?` | `Is This Valid.md` |
 | `# Link to [[Page]]` | `Link to Page.md` |
 
+## Comparison with obsidian-filename-heading-sync
+
+This plugin is inspired by [obsidian-filename-heading-sync](https://github.com/dvcrn/obsidian-filename-heading-sync) but takes a different approach:
+
+| Feature | Title Sync | filename-heading-sync |
+|---------|------------|----------------------|
+| Sync trigger | Manual command only | Automatic (file open/save hooks) |
+| Direction | H1 → filename | Bidirectional |
+| Auto-insert heading | No | Yes |
+| Configuration | None needed | Multiple options |
+| Philosophy | Simple, opinionated | Feature-rich |
+
+**When to choose Title Sync:**
+- You want full control over when syncing happens
+- You prefer explicit actions over automatic behavior
+- You don't need bidirectional sync or auto-insertion of headings
+
+**When to choose filename-heading-sync:**
+- You want automatic syncing without manual intervention
+- You need bidirectional sync (filename changes update heading)
+- You want the plugin to auto-insert H1 headers in new files
+
 ## Development
 
 ```bash
