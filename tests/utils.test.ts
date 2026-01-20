@@ -196,8 +196,9 @@ describe('titleToFilename', () => {
 		});
 
 		it('handles complex formatting', () => {
-			expect(titleToFilename('My **Bold** Title: A Story? (Part 1) with [[links]]'))
-				.toBe('My Bold Title- A Story- (Part 1) with links');
+			expect(titleToFilename('My **Bold** Title: A Story? (Part 1) with [[links]]')).toBe(
+				'My Bold Title- A Story- (Part 1) with links'
+			);
 		});
 	});
 
