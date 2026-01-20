@@ -1,0 +1,10 @@
+{
+	"id": "title-sync",
+	"name": "Title Sync",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Sync the first H1 header with the filename via a manual command.",
+	"author": "Igor Kupczyński",
+	"authorUrl": "https://github.com/igor-kupczynski",
+	"isDesktopOnly": false
+}
