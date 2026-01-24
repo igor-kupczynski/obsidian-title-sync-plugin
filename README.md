@@ -2,6 +2,8 @@
 
 Sync the first H1 header of a markdown file with its filename using a manual command.
 
+> **Note:** This plugin is currently [under review](https://github.com/obsidianmd/obsidian-releases/pull/9752) for inclusion in the Obsidian Community Plugins directory. In the meantime, you can install it manually.
+
 ## Features
 
 - **Single command**: "Title Sync: Sync title to filename"
@@ -14,14 +16,16 @@ Sync the first H1 header of a markdown file with its filename using a manual com
 
 ## Installation
 
-### From Obsidian Community Plugins (Recommended)
+### From Obsidian Community Plugins
+
+_Coming soon_ — the plugin is [under review](https://github.com/obsidianmd/obsidian-releases/pull/9752). Once approved:
 
 1. Open Obsidian Settings
 2. Go to Community Plugins and disable Safe Mode
 3. Click Browse and search for "Title Sync"
 4. Install and enable the plugin
 
-### Manual Installation
+### Manual Installation (recommended for now)
 
 1. Download `main.js` and `manifest.json` from the [latest release](https://github.com/igor-kupczynski/obsidian-title-sync-plugin/releases)
 2. Create a folder `title-sync` in your vault's `.obsidian/plugins/` directory
