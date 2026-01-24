@@ -50,6 +50,12 @@ The file will be renamed to match the H1 header.
 4. Click the plus icon and set your preferred shortcut
    - Suggested: `Cmd+Option+T` (Mac) or `Ctrl+Alt+T` (Windows/Linux)
 
+### Recommended setting: disable "Show inline title"
+
+This plugin works best with **Settings → Appearance → Show inline title** turned off.
+
+When enabled, Obsidian displays the filename as an editable title at the top of each note. If your notes also have an H1 header (which this plugin syncs to the filename), you'll see the title twice — once as the inline title and once as your H1 header. Disabling the inline title avoids this redundancy and keeps your H1 as the single source of truth for the note's title.
+
 ## Examples
 
 | H1 Header | Resulting Filename |
