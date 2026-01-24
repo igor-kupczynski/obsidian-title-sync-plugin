@@ -25,7 +25,7 @@ export default class TitleSyncPlugin extends Plugin {
 			const title = extractFirstH1(content);
 
 			if (!title) {
-				new Notice('No H1 header found in the file');
+				new Notice('No h1 heading found in the file');
 				return;
 			}
 
